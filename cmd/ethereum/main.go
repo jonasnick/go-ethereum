@@ -26,13 +26,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/cmd/utils"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/eth"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/p2p"
+	"github.com/jonasnick/go-ethereum/state"
 )
 
 const (

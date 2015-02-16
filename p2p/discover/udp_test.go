@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/logger"
 )
 
 func init() {

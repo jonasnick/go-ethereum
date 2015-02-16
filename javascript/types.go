@@ -3,11 +3,11 @@ package javascript
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/ui"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/eth"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/ui"
+	"github.com/jonasnick/go-ethereum/xeth"
 	"github.com/obscuren/otto"
 )
 

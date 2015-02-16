@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 func BenchmarkDaggerSearch(b *testing.B) {

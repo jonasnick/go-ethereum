@@ -3,7 +3,7 @@ package randentropy
 import (
 	crand "crypto/rand"
 	"encoding/binary"
-	"github.com/ethereum/go-ethereum/crypto/sha3"
+	"github.com/jonasnick/go-ethereum/crypto/sha3"
 	"io"
 	"os"
 	"strings"

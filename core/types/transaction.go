@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto/secp256k1"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/rlp"
 )
 
 func IsContractAddr(addr []byte) bool {

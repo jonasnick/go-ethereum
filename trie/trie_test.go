@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 type Db map[string][]byte

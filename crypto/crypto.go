@@ -18,10 +18,10 @@ import (
 	"code.google.com/p/go-uuid/uuid"
 	"code.google.com/p/go.crypto/pbkdf2"
 	"code.google.com/p/go.crypto/ripemd160"
-	"github.com/ethereum/go-ethereum/crypto/ecies"
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	"github.com/ethereum/go-ethereum/crypto/sha3"
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/crypto/ecies"
+	"github.com/jonasnick/go-ethereum/crypto/secp256k1"
+	"github.com/jonasnick/go-ethereum/crypto/sha3"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 func init() {
@@ -182,7 +182,7 @@ func decryptPreSaleKey(fileContent []byte, password string) (key *Key, err error
 	iv := encSeedBytes[:16]
 	cipherText := encSeedBytes[16:]
 	/*
-		See https://github.com/ethereum/pyethsaletool
+		See https://github.com/jonasnick/pyethsaletool
 
 		pyethsaletool generates the encryption key from password by
 		2000 rounds of PBKDF2 with HMAC-SHA-256 using password as salt (:().

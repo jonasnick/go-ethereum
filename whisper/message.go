@@ -4,7 +4,7 @@ import (
 	"crypto/ecdsa"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 )
 
 type Message struct {

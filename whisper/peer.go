@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/jonasnick/go-ethereum/p2p"
 	"gopkg.in/fatih/set.v0"
 )
 

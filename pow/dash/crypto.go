@@ -5,7 +5,7 @@ char *sha3_cgo(char *, int); // Forward declaration
 */
 import "C"
 import (
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 )
 
 //export Sha3

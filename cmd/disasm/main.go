@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/vm"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/vm"
 )
 
 func main() {

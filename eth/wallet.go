@@ -6,8 +6,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/core/types"
 )
 
 type Account struct {

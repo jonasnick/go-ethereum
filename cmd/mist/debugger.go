@@ -27,12 +27,12 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/vm"
+	"github.com/jonasnick/go-ethereum/cmd/utils"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/vm"
 	"github.com/obscuren/qml"
 )
 

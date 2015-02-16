@@ -1,8 +1,8 @@
 package qt
 
 import (
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ui"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/ui"
 	"github.com/obscuren/qml"
 )
 

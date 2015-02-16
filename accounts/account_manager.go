@@ -34,7 +34,7 @@ package accounts
 
 import (
 	crand "crypto/rand"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 )
 
 // TODO: better name for this struct?

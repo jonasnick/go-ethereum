@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/tests/helper"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/ethdb"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/tests/helper"
 )
 
 type Account struct {

@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/ecies"
-	"github.com/ethereum/go-ethereum/event/filter"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto/ecies"
+	"github.com/jonasnick/go-ethereum/event/filter"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/p2p"
 	"gopkg.in/fatih/set.v0"
 )
 

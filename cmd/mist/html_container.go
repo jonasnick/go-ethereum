@@ -29,9 +29,9 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/xeth"
 	"github.com/howeyc/fsnotify"
 	"github.com/obscuren/qml"
 )

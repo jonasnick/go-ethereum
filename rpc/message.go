@@ -22,7 +22,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/xeth"
 )
 
 const (

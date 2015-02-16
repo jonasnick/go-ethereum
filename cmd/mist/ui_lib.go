@@ -25,13 +25,13 @@ import (
 	"io/ioutil"
 	"path"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/event/filter"
-	"github.com/ethereum/go-ethereum/javascript"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/eth"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/event/filter"
+	"github.com/jonasnick/go-ethereum/javascript"
+	"github.com/jonasnick/go-ethereum/miner"
+	"github.com/jonasnick/go-ethereum/xeth"
 	"github.com/obscuren/qml"
 )
 

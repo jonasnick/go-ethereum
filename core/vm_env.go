@@ -3,9 +3,9 @@ package core
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/vm"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/vm"
 )
 
 type VMEnv struct {

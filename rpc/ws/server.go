@@ -22,9 +22,9 @@ import (
 	"net/http"
 
 	"code.google.com/p/go.net/websocket"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/rpc"
+	"github.com/jonasnick/go-ethereum/xeth"
 )
 
 var wslogger = logger.NewLogger("RPC-WS")

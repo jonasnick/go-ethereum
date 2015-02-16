@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/discover"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/p2p/discover"
 )
 
 func startTestServer(t *testing.T, pf newPeerHook) *Server {

@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/ecies"
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	ethlogger "github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/p2p/discover"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto/ecies"
+	"github.com/jonasnick/go-ethereum/crypto/secp256k1"
+	ethlogger "github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/p2p/discover"
 )
 
 var clogger = ethlogger.NewLogger("CRYPTOID")

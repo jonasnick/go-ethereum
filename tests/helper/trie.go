@@ -1,6 +1,6 @@
 package helper
 
-import "github.com/ethereum/go-ethereum/trie"
+import "github.com/jonasnick/go-ethereum/trie"
 
 type MemDatabase struct {
 	db map[string][]byte

@@ -6,13 +6,13 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/pow"
-	"github.com/ethereum/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/eth"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/event"
+	"github.com/jonasnick/go-ethereum/pow"
+	"github.com/jonasnick/go-ethereum/state"
 	"gopkg.in/fatih/set.v0"
 )
 

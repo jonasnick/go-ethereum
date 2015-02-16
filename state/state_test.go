@@ -3,8 +3,8 @@ package state
 import (
 	checker "gopkg.in/check.v1"
 
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/ethdb"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 type StateSuite struct {

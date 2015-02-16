@@ -11,7 +11,7 @@ import (
 	"testing/quick"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 )
 
 func TestTable_bumpOrAddBucketAssign(t *testing.T) {

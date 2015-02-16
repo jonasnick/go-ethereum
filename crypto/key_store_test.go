@@ -1,7 +1,7 @@
 package crypto
 
 import (
-	"github.com/ethereum/go-ethereum/crypto/randentropy"
+	"github.com/jonasnick/go-ethereum/crypto/randentropy"
 	"reflect"
 	"testing"
 )

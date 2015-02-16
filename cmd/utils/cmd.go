@@ -31,17 +31,17 @@ import (
 	"runtime"
 
 	"bitbucket.org/kardianos/osext"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/rlp"
-	rpchttp "github.com/ethereum/go-ethereum/rpc/http"
-	rpcws "github.com/ethereum/go-ethereum/rpc/ws"
-	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/eth"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/miner"
+	"github.com/jonasnick/go-ethereum/rlp"
+	rpchttp "github.com/jonasnick/go-ethereum/rpc/http"
+	rpcws "github.com/jonasnick/go-ethereum/rpc/ws"
+	"github.com/jonasnick/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/xeth"
 )
 
 var clilogger = logger.NewLogger("CLI")

@@ -31,14 +31,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/event/filter"
-	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/ethdb"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/event/filter"
+	"github.com/jonasnick/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/xeth"
 )
 
 const (
@@ -340,7 +340,7 @@ func (p *EthereumApi) WhisperMessages(id int, reply *interface{}) error {
 }
 
 func (p *EthereumApi) GetRequestReply(req *RpcRequest, reply *interface{}) error {
-	// Spec at https://github.com/ethereum/wiki/wiki/Generic-ON-RPC
+	// Spec at https://github.com/jonasnick/wiki/wiki/Generic-ON-RPC
 	rpclogger.DebugDetailf("%T %s", req.Params, req.Params)
 	switch req.Method {
 	case "eth_coinbase":

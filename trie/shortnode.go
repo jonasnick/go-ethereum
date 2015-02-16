@@ -1,6 +1,6 @@
 package trie
 
-import "github.com/ethereum/go-ethereum/ethutil"
+import "github.com/jonasnick/go-ethereum/ethutil"
 
 type ShortNode struct {
 	trie  *Trie

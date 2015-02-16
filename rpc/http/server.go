@@ -21,9 +21,9 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/rpc"
+	"github.com/jonasnick/go-ethereum/xeth"
 )
 
 var rpchttplogger = logger.NewLogger("RPC-HTTP")

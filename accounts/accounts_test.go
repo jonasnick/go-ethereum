@@ -1,7 +1,7 @@
 package accounts
 
 import (
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 	"testing"
 )
 

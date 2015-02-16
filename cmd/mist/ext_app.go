@@ -21,11 +21,11 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/ui/qt"
-	"github.com/ethereum/go-ethereum/xeth"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/event"
+	"github.com/jonasnick/go-ethereum/ui/qt"
+	"github.com/jonasnick/go-ethereum/xeth"
 	"github.com/obscuren/qml"
 )
 

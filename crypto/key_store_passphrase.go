@@ -71,7 +71,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
-	"github.com/ethereum/go-ethereum/crypto/randentropy"
+	"github.com/jonasnick/go-ethereum/crypto/randentropy"
 	"io"
 	"os"
 	"path"

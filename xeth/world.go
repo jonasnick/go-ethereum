@@ -1,6 +1,6 @@
 package xeth
 
-import "github.com/ethereum/go-ethereum/state"
+import "github.com/jonasnick/go-ethereum/state"
 
 type State struct {
 	xeth *XEth

@@ -4,7 +4,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 type ContextRef interface {

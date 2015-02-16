@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/crypto/secp256k1"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 // These tests are sanity checks.

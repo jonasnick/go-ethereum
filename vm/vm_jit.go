@@ -9,7 +9,7 @@ int   evmjit_run(void* _jit, void* _data, void* _env);
 void  evmjit_destroy(void* _jit);
 
 // Shared library evmjit (e.g. libevmjit.so) is expected to be installed in /usr/local/lib
-// More: https://github.com/ethereum/evmjit
+// More: https://github.com/jonasnick/evmjit
 #cgo LDFLAGS: -levmjit
 */
 import "C"
@@ -18,8 +18,8 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/state"
 	"math/big"
 	"unsafe"
 )

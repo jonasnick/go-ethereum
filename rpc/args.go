@@ -1,7 +1,7 @@
 package rpc
 
 import "encoding/json"
-import "github.com/ethereum/go-ethereum/core"
+import "github.com/jonasnick/go-ethereum/core"
 
 type GetBlockArgs struct {
 	BlockNumber int32

@@ -1,8 +1,8 @@
 package ui
 
 import (
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/core"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 func fromHex(s string) []byte {

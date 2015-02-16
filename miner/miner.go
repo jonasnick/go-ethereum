@@ -3,9 +3,9 @@ package miner
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/pow/ezp"
+	"github.com/jonasnick/go-ethereum/eth"
+	"github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/pow/ezp"
 )
 
 var minerlogger = logger.NewLogger("MINER")

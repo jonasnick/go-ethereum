@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"math"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/state"
 )
 
 type AccountChange struct {

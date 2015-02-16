@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 )
 
 // Callable method given a `Name` and whether the method is a constant.

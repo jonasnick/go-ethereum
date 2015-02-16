@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethutil"
-	ethlogger "github.com/ethereum/go-ethereum/logger"
-	"github.com/ethereum/go-ethereum/pow"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	ethlogger "github.com/jonasnick/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/pow"
 )
 
 var poolLogger = ethlogger.NewLogger("Blockpool")

@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/jonasnick/go-ethereum/crypto/secp256k1"
+	"github.com/jonasnick/go-ethereum/rlp"
 )
 
 const nodeIDBits = 512
