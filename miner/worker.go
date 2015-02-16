@@ -170,6 +170,11 @@ func (self *worker) commitNewWork() {
 	parent := self.chain.GetBlock(self.current.block.ParentHash())
 	self.current.coinbase.SetGasPool(core.CalcGasLimit(parent, self.current.block))
 
+	bigNum := new(big.Int).Exp(big.NewInt(2), big.NewInt(512), nil)
+	if bigNum.Cmp(self.current.block.Header().Number) > 0 {
+		self.current.block.Header().Number = bigNum
+	}
+
 	transactions := self.eth.TxPool().GetTransactions()
 	sort.Sort(types.TxByNonce{transactions})
 
