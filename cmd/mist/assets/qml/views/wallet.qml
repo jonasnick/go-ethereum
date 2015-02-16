@@ -15,14 +15,23 @@ Rectangle {
 	objectName: "walletView"
 	anchors.fill: parent
 
+        Label {
+            objectName: "balanceLabel"
+            visible: false
+	    onTextChanged: {
+		balance.text = text
+		menuItem.secondaryTitle = text
+	    }
+        }
+
 	function onReady() {
 		setBalance()
 	}
 
 	function setBalance() {
-		balance.text = "<b>Balance</b>: " + eth.numberToHuman(eth.balanceAt(eth.key().address))
+		balance.text = "<b>Balance</b>: " + eth.numberToHuman(eth.balanceAt(eth.coinbase()))
 		if(menuItem)
-			menuItem.secondaryTitle = eth.numberToHuman(eth.balanceAt(eth.key().address))
+			menuItem.secondaryTitle = eth.numberToHuman(eth.balanceAt(eth.coinbase()))
 	}
 
 	ListModel {
@@ -95,7 +104,7 @@ Rectangle {
 
 				ComboBox {
 					id: valueDenom
-					currentIndex: 6
+					currentIndex: 5
 					model: denomModel
 				}
 
@@ -130,7 +139,7 @@ Rectangle {
 					onClicked: {
 						var value = txValue.text + denomModel.get(valueDenom.currentIndex).zeros;
 						var gasPrice = "10000000000000"
-						var res = eth.transact({from: eth.key().privateKey, to: txTo.text, value: value, gas: "500", gasPrice: gasPrice})
+						var res = eth.transact({from: eth.coinbase(), to: txTo.text, value: value, gas: "500", gasPrice: gasPrice})
 					}
 				}
 			}
@@ -155,17 +164,10 @@ Rectangle {
 				model: ListModel {
 					id: txModel
 					Component.onCompleted: {
-						var me = eth.key().address;
-						var filterTo = ethx.watch({latest: -1, to: me});
-						var filterFrom = ethx.watch({latest: -1, from: me});
-						filterTo.changed(addTxs)
-						filterFrom.changed(addTxs)
-
-						addTxs(filterTo.messages())
-						addTxs(filterFrom.messages())
 					}
 
 					function addTxs(messages) {
+						/*
 						setBalance()
 
 						for(var i = 0; i < messages.length; i++) {
@@ -179,6 +181,7 @@ Rectangle {
 							}
 							txModel.insert(0, {num: txModel.count, from: from, to: to, value: eth.numberToHuman(message.value)})
 						}
+						*/
 					}
 				}
 			}

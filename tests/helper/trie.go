@@ -1,6 +1,6 @@
 package helper
 
-import "github.com/ethereum/go-ethereum/trie"
+import "github.com/jonasnick/go-ethereum/trie"
 
 type MemDatabase struct {
 	db map[string][]byte
@@ -27,5 +27,5 @@ func (db *MemDatabase) LastKnownTD() []byte { return nil }
 func NewTrie() *trie.Trie {
 	db, _ := NewMemDatabase()
 
-	return trie.New(db, "")
+	return trie.New(nil, db)
 }

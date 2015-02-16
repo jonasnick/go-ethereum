@@ -4,12 +4,11 @@ import (
 	"container/list"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/wire"
+	"github.com/jonasnick/go-ethereum/core/types"
+	"github.com/jonasnick/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/ethdb"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/event"
 )
 
 // Implement our EthTest Manager
@@ -54,13 +53,6 @@ func (tm *TestManager) TxPool() *TxPool {
 func (tm *TestManager) EventMux() *event.TypeMux {
 	return tm.eventMux
 }
-func (tm *TestManager) Broadcast(msgType wire.MsgType, data []interface{}) {
-	fmt.Println("Broadcast not implemented")
-}
-
-func (tm *TestManager) ClientIdentity() wire.ClientIdentity {
-	return nil
-}
 func (tm *TestManager) KeyManager() *crypto.KeyManager {
 	return nil
 }
@@ -77,7 +69,6 @@ func NewTestManager() *TestManager {
 		fmt.Println("Could not create mem-db, failing")
 		return nil
 	}
-	ethutil.Config.Db = db
 
 	testManager := &TestManager{}
 	testManager.eventMux = new(event.TypeMux)

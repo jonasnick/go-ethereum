@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/jonasnick/go-ethereum/crypto"
 )
 
 func TestSign(t *testing.T) {
@@ -40,12 +40,11 @@ func TestMessageEncryptDecrypt(t *testing.T) {
 
 	msg1, err := envelope.Open(prv2)
 	if err != nil {
-		fmt.Println(err)
+		t.Error(err)
 		t.FailNow()
 	}
 
 	if !bytes.Equal(msg1.Payload, data) {
-		fmt.Println("encryption error. data did not match")
-		t.FailNow()
+		t.Error("encryption error. data did not match")
 	}
 }

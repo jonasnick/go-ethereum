@@ -7,7 +7,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/ethutil"
 )
 
 type KeyStore interface {

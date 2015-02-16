@@ -3,7 +3,7 @@ package p2p
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/logger"
+	"github.com/jonasnick/go-ethereum/logger"
 )
 
 type testLogger struct{ t *testing.T }
@@ -15,7 +15,7 @@ func testlog(t *testing.T) testLogger {
 	return l
 }
 
-func (testLogger) GetLogLevel() logger.LogLevel { return logger.DebugLevel }
+func (testLogger) GetLogLevel() logger.LogLevel { return logger.DebugDetailLevel }
 func (testLogger) SetLogLevel(logger.LogLevel)  {}
 
 func (l testLogger) LogPrint(level logger.LogLevel, msg string) {

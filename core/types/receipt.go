@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/ethutil"
-	"github.com/ethereum/go-ethereum/state"
+	"github.com/jonasnick/go-ethereum/ethutil"
+	"github.com/jonasnick/go-ethereum/state"
 )
 
 type Receipt struct {
@@ -17,7 +17,7 @@ type Receipt struct {
 }
 
 func NewReceipt(root []byte, cumalativeGasUsed *big.Int) *Receipt {
-	return &Receipt{PostState: ethutil.CopyBytes(root), CumulativeGasUsed: cumalativeGasUsed}
+	return &Receipt{PostState: ethutil.CopyBytes(root), CumulativeGasUsed: new(big.Int).Set(cumalativeGasUsed)}
 }
 
 func NewRecieptFromValue(val *ethutil.Value) *Receipt {
